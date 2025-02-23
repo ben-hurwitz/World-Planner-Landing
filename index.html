@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Planner</title>
+    <style>
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf4cd;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 600px;
+            margin-top: 500px;
+        }
+
+        .title {
+            font-size: 200px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .title1 {
+            font-size: 200px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: -250px;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            font-style: italic;
+            color: #c5ff2f;
+        }
+
+        .foot {
+            display: flex;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: 2px solid black;
+            border-radius: 60px;
+            text-decoration: none;
+            color: black;
+            font-size: 50px;
+        }
+
+        .symbol {
+            position: absolute;
+            animation: rotate 10s linear infinite;
+        }
+
+        .blue-symbol {
+            top: -350px;
+            left: 700px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .green-symbol {
+            top: -200px;
+            left: 1200px;
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>A Project for MadHacks 2025</span>
+        <span>Aashish | Ben | Ryan | Harsh | Mohnish</span>
+    </div>
+    <div class="container">
+        <img src="blue-symbol.png" alt="Blue Symbol" class="symbol blue-symbol">
+        <img src="green-symbol.png" alt="Green Symbol" class="symbol green-symbol">
+        <p class="title1">WORLD</p>
+            <p class="title">PLANNER</p>
+        <a href="map.html" class="button">Continue →</a>
+    </div>
+</body>
+</html>
